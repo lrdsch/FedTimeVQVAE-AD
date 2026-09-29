@@ -1,0 +1,20 @@
+{
+  "tag": "zn_a1",
+  "smoke": false,
+  "cohort": "ucr2p_10",
+  "cohort_fingerprint": "ad5e0c7a23570299",
+  "engine": "deep",
+  "arms": "federated_enc_fedavg",
+  "heads": "ma_c",
+  "modes": "local",
+  "extra_flags": "--window-normalization zscore --fed-enc-cb suffstat --fed-enc-prior local --fed-enc-bn shared",
+  "protocol": "converged",
+  "s1_rounds": 300,
+  "s2_rounds": 300,
+  "local_epochs": 10,
+  "fed_patience_rounds": 6,
+  "batch": 64,
+  "seeds": "0",
+  "started": "2026-08-06 08:57:02",
+  "note": "Comparable to any other tag with the same cohort_fingerprint. An ablation is the same cohort with different extra_flags."
+}

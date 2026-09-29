@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "dataset": "ucr_split_w2p",
+    "cluster": "ucr_080",
+    "clients": [
+      "ucr_080_p0",
+      "ucr_080_p1",
+      "ucr_080_p2",
+      "ucr_080_p3",
+      "ucr_080_p4"
+    ],
+    "seeds": [
+      0
+    ],
+    "s1_epochs": 2,
+    "s2_epochs": 2,
+    "protocol": "converged",
+    "s1_rounds": 300,
+    "s2_rounds": 300,
+    "local_epochs": 10,
+    "batch_stage1": 64,
+    "batch_stage2": 64,
+    "amp_dtype": "float16",
+    "commit": "670c71d8ad80d565b5be900c19e667ab938ed5c8",
+    "dirty": true
+  },
+  "summary": {
+    "federated_enc_fedavg": {
+      "vus_pr": {
+        "mean": 6.71687435815438e-05,
+        "std": 8.406780161685275e-06,
+        "worst": 5.660160123595447e-05,
+        "n": 5
+      },
+      "auprc": {
+        "mean": 2.023489092918208e-05,
+        "std": 8.037294101772089e-07,
+        "worst": 1.898670140091161e-05,
+        "n": 5
+      },
+      "auroc": {
+        "mean": 0.5361291612516245,
+        "std": 0.018644389131308635,
+        "worst": 0.5064199490152954,
+        "n": 5
+      },
+      "pate_f1": {
+        "mean": 5.311215920908675e-05,
+        "std": 2.563678158890969e-06,
+        "worst": 4.8505487207152454e-05,
+        "n": 5
+      },
+      "affiliation_f1": {
+        "mean": 0.8852491249389068,
+        "std": 0.006794303967025204,
+        "worst": 0.8724490089566362,
+        "n": 5
+      },
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0,
+        "worst": 0.0,
+        "n": 5
+      }
+    }
+  },
+  "records": [
+    {
+      "_arm": "federated_enc_fedavg",
+      "_seed": 0,
+      "_entity": "ucr_080_p0",
+      "vus_pr": 6.79054743409708e-05,
+      "auprc": 1.898670140091161e-05,
+      "auroc": 0.5064199490152954,
+      "pate_f1": 4.8505487207152454e-05,
+      "affiliation_f1": 0.8905383080758528,
+      "f1": 0.0
+    },
+    {
+      "_arm": "federated_enc_fedavg",
+      "_seed": 0,
+      "_entity": "ucr_080_p1",
+      "vus_pr": 6.188515642755921e-05,
+      "auprc": 2.0451106478424677e-05,
+      "auroc": 0.5417624712586224,
+      "pate_f1": 5.2849535256952715e-05,
+      "affiliation_f1": 0.8845491145361745,
+      "f1": 0.0
+    },
+    {
+      "_arm": "federated_enc_fedavg",
+      "_seed": 0,
+      "_entity": "ucr_080_p2",
+      "vus_pr": 5.660160123595447e-05,
+      "auprc": 1.974481121009394e-05,
+      "auroc": 0.5253955063480955,
+      "pate_f1": 5.6143766285610616e-05,
+      "affiliation_f1": 0.8878062756190421,
+      "f1": 0.0
+    },
+    {
+      "_arm": "federated_enc_fedavg",
+      "_seed": 0,
+      "_entity": "ucr_080_p3",
+      "vus_pr": 6.768906327657302e-05,
+      "auprc": 2.065926016235651e-05,
+      "auroc": 0.5463704638608418,
+      "pate_f1": 5.344251466475135e-05,
+      "affiliation_f1": 0.8724490089566362,
+      "f1": 0.0
+    },
+    {
+      "_arm": "federated_enc_fedavg",
+      "_seed": 0,
+      "_entity": "ucr_080_p4",
+      "vus_pr": 8.176242262666146e-05,
+      "auprc": 2.1332575394123676e-05,
+      "auroc": 0.5606974157752673,
+      "pate_f1": 5.4619492630966646e-05,
+      "affiliation_f1": 0.8909029175068288,
+      "f1": 0.0
+    }
+  ]
+}

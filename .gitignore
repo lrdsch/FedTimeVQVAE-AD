@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ── Run outputs ───────────────────────────────────────────────────────────
+# `artifacts/runs/` is tracked ON PURPOSE: it holds the per-cell results the paper's tables are
+# read back from (summary json, per-client report.json, and the score profiles the fusion
+# analysis consumes). What a NEW run adds to that tree is not tracked -- checkpoints, token
+# caches and loss histories are gigabytes and reproduce from the code.
+#
+# `artifacts/*` and not `artifacts/`: git never descends into an ignored DIRECTORY, so with the
+# plain form the re-inclusion on the next line would never be reached. Everything else under
+# artifacts/ -- a smoke tree, a scratch tag -- is still ignored.
+#
+# Under artifacts/runs/ only the PUBLISHED tags are re-included, one by one (the list is appended
+# below when the tree is exported). A tag you produce yourself therefore stays untracked by
+# default: your runs are yours, and they cannot be committed by an absent-minded `git add -A`.
+artifacts/*
+!artifacts/runs/
+artifacts/runs/*
+*.ckpt
+*.pt
+*.pth
+all_time_series_train_test_all_features/
+fed_history.json
+knobs.json
+placement.tsv
+
+logs/
+plots/
+
+# Datasets: downloaded and built locally, never committed. NB: no trailing slash on the
+# archive path -- with one, `git add` still tracks a SYMLINK left there by a local run.
+data/
+preprocessing/dataset/AnomalyDatasets_2021
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Secrets
+*.pem
+*.key
+.env
+.env.*
+!artifacts/runs/zn_main/
+!artifacts/runs/zn_a1/
+!artifacts/runs/zn_a2/
+!artifacts/runs/zn_enc/
+!artifacts/runs/zn_ot/
+!artifacts/runs/zn_es/
+!artifacts/runs/zn_a2s2_ctrl/
+!artifacts/runs/zn_a2s2_tau64/
+!artifacts/runs/zn_a2s2_lep/
+!artifacts/runs/zn_cbfa_tau64/
+!artifacts/runs/zn_fedtokcp/
+!artifacts/runs/zn_170_ctfp/
+!artifacts/runs/c50_local/
+!artifacts/runs/c50_central/
+!artifacts/runs/c50_a2/
+!artifacts/runs/c50_tau64/
+!artifacts/runs/zn_floor/

@@ -1,0 +1,20 @@
+{
+  "tag": "zn_a2s2_tau64",
+  "smoke": false,
+  "cohort": "ucr2p_10",
+  "cohort_fingerprint": "ad5e0c7a23570299",
+  "engine": "deep",
+  "arms": "federated_enc_fedavg",
+  "heads": "ma_c",
+  "modes": "local",
+  "extra_flags": "--window-normalization zscore --fed-enc-cb suffstat --fed-enc-prior partial --fed-enc-bn shared --fed-s2-val fixed --tau-steps 64 --fed-s2-patience 29 --resume-from artifacts/runs/zn_a2/ckpt/ucr_split_w2p/ucr_083/seed0/federated_enc_fedavg_bn-shared_prior-partial",
+  "protocol": "converged",
+  "s1_rounds": 0,
+  "s2_rounds": 300,
+  "local_epochs": 10,
+  "fed_patience_rounds": 6,
+  "batch": 64,
+  "seeds": "0",
+  "started": "2026-08-09 22:39:36",
+  "note": "Comparable to any other tag with the same cohort_fingerprint. An ablation is the same cohort with different extra_flags."
+}

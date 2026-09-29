@@ -1,0 +1,722 @@
+% references.bib — submitted Federated TimeVQVAE-AD paper (IEEEtran)
+%
+% PROVENANCE — regenerated on 2026-08-19.
+% Every record except schiavo2026fedtimevqvae was downloaded from DBLP using
+% https://dblp.org/rec/<record-key>.bib?param=1. This standard export includes the
+% full conference name, edition, location, dates, editors, series, volume, number,
+% pages, publisher, DOI and URL. No authors, titles, venues or years were invented.
+% Each biburl records its download source; timestamp, biburl and bibsource are
+% retained and ignored by IEEEtran.bst. Raw downloads are in documentation/references/dblp/.
+%
+% CHANGES TO DOWNLOADS
+% 1. Citation keys match paper.tex: for example DBLP:conf/aistats/McMahanMRHA17
+%    becomes mcmahan2017federated.
+% 2. In inproceedings entries, editor, publisher, series and volume have an x prefix
+%    so IEEEtran ignores them without deleting the original metadata. Article volume,
+%    issue and pages are retained. Printing the suppressed fields added a ninth page.
+%    To restore them: sed -i -E 's/^(\s+)x(editor|publisher|series|volume)/\1\2/' references.bib
+% 3. Typography corrections preserve names and capitalization:
+%    - Seven occurrences of {-} in names become -, preserving initials such as
+%      H.-P. Kriegel and L.-P. Morency rather than H. Kriegel and L. Morency.
+%    - Braces group Blaise {Ag{\"{u}}era y Arcas} as a compound surname.
+%    - Braces protect {PeFAD}, {FedProto}, {MaskGIT}, {FedBN} and Non-{IID}.
+%    - {SCAFFOLD:} becomes {SCAFFOLD}: so the next title word is capitalized.
+%
+% KNOWN DIFFERENCES FROM EARLIER HAND-CURATED RECORDS
+% DBLP lists Brendan McMahan in mcmahan2017federated, producing B. McMahan; PMLR
+% lists H. Brendan McMahan. The downloaded form is retained. DBLP lists Aaron J.
+% Elmore for paparrizos2022vus, while the PVLDB article omits the middle initial.
+% The CoRR record for liang2020lgfedavg has the five v1 authors; arXiv v3 has eight,
+% adding Allen, Auerbach and Brent. These are recorded source differences.
+%
+% STYLE
+% Use IEEEtran with \bstctlcite{IEEEexample:BSTcontrol} immediately after
+% \begin{document}. The control entry omits URLs and abbreviates long author lists.
+% Without it, the bibliography grows. Acronym braces also survive a .bst change.
+
+@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+  CTLuse_forced_etal  = "yes",
+  CTLmax_names_forced_etal = "6",
+  CTLnames_show_etal  = "1",
+  CTLuse_url          = "no",
+  CTLuse_alt_spacing  = "yes",
+  CTLdash_repeated_names = "no"
+}
+
+% ======================================================================
+% Federated learning — foundations and aggregation
+% ======================================================================
+
+@inproceedings{mcmahan2017federated,
+  author       = {Brendan McMahan and
+                  Eider Moore and
+                  Daniel Ramage and
+                  Seth Hampson and
+                  Blaise {Ag{\"{u}}era y Arcas}},
+  xeditor      = {Aarti Singh and
+                  Xiaojin (Jerry) Zhu},
+  title        = {Communication-Efficient Learning of Deep Networks from Decentralized
+                  Data},
+  booktitle    = {Proceedings of the 20th International Conference on Artificial Intelligence
+                  and Statistics, {AISTATS} 2017, 20-22 April 2017, Fort Lauderdale,
+                  FL, {USA}},
+  xseries      = {Proceedings of Machine Learning Research},
+  xvolume      = {54},
+  pages        = {1273--1282},
+  xpublisher   = {{PMLR}},
+  year         = {2017},
+  url          = {http://proceedings.mlr.press/v54/mcmahan17a.html},
+  timestamp    = {Wed, 29 May 2019 08:41:44 +0200},
+  biburl       = {https://dblp.org/rec/conf/aistats/McMahanMRHA17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{li2020fedprox,
+  author       = {Tian Li and
+                  Anit Kumar Sahu and
+                  Manzil Zaheer and
+                  Maziar Sanjabi and
+                  Ameet Talwalkar and
+                  Virginia Smith},
+  xeditor      = {Inderjit S. Dhillon and
+                  Dimitris S. Papailiopoulos and
+                  Vivienne Sze},
+  title        = {Federated Optimization in Heterogeneous Networks},
+  booktitle    = {Proceedings of the Third Conference on Machine Learning and Systems,
+                  MLSys 2020, Austin, TX, USA, March 2-4, 2020},
+  xpublisher   = {mlsys.org},
+  year         = {2020},
+  url          = {https://proceedings.mlsys.org/paper\_files/paper/2020/hash/1f5fe83998a09396ebe6477d9475ba0c-Abstract.html},
+  timestamp    = {Fri, 28 Jun 2024 10:41:08 +0200},
+  biburl       = {https://dblp.org/rec/conf/mlsys/LiSZSTS20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{wang2020fedma,
+  author       = {Hongyi Wang and
+                  Mikhail Yurochkin and
+                  Yuekai Sun and
+                  Dimitris S. Papailiopoulos and
+                  Yasaman Khazaeni},
+  title        = {Federated Learning with Matched Averaging},
+  booktitle    = {8th International Conference on Learning Representations, {ICLR} 2020,
+                  Addis Ababa, Ethiopia, April 26-30, 2020},
+  xpublisher   = {OpenReview.net},
+  year         = {2020},
+  url          = {https://openreview.net/forum?id=BkluqlSFDS},
+  timestamp    = {Wed, 06 Dec 2023 16:16:18 +0100},
+  biburl       = {https://dblp.org/rec/conf/iclr/WangYSPK20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Federated learning — partial sharing / personalization
+% ======================================================================
+
+@article{arivazhagan2019fedper,
+  author       = {Manoj Ghuhan Arivazhagan and
+                  Vinay Aggarwal and
+                  Aaditya Kumar Singh and
+                  Sunav Choudhary},
+  title        = {Federated Learning with Personalization Layers},
+  journal      = {CoRR},
+  volume       = {abs/1912.00818},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1912.00818},
+  eprinttype   = {arXiv},
+  eprint       = {1912.00818},
+  timestamp    = {Thu, 02 Jan 2020 18:08:18 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1912-00818.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{collins2021fedrep,
+  author       = {Liam Collins and
+                  Hamed Hassani and
+                  Aryan Mokhtari and
+                  Sanjay Shakkottai},
+  xeditor      = {Marina Meila and
+                  Tong Zhang},
+  title        = {Exploiting Shared Representations for Personalized Federated Learning},
+  booktitle    = {Proceedings of the 38th International Conference on Machine Learning,
+                  {ICML} 2021, 18-24 July 2021, Virtual Event},
+  xseries      = {Proceedings of Machine Learning Research},
+  xvolume      = {139},
+  pages        = {2089--2099},
+  xpublisher   = {{PMLR}},
+  year         = {2021},
+  url          = {http://proceedings.mlr.press/v139/collins21a.html},
+  timestamp    = {Wed, 25 Aug 2021 17:11:17 +0200},
+  biburl       = {https://dblp.org/rec/conf/icml/CollinsHMS21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{liang2020lgfedavg,
+  author       = {Paul Pu Liang et al.},
+  title        = {Think Locally, Act Globally: Federated Learning with Local and Global
+                  Representations},
+  journal      = {CoRR},
+  volume       = {abs/2001.01523},
+  year         = {2020},
+  url          = {http://arxiv.org/abs/2001.01523},
+  eprinttype   = {arXiv},
+  eprint       = {2001.01523},
+  timestamp    = {Thu, 10 Apr 2025 17:44:38 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2001-01523.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Federated time-series anomaly detection
+% ======================================================================
+
+@inproceedings{zhu2022fedexdnn,
+  author       = {Wei Zhu and
+                  Dongjin Song and
+                  Yuncong Chen and
+                  Wei Cheng and
+                  Bo Zong and
+                  Takehiko Mizoguchi and
+                  Cristian Lumezanu and
+                  Haifeng Chen and
+                  Jiebo Luo},
+  xeditor      = {Shusaku Tsumoto and
+                  Yukio Ohsawa and
+                  Lei Chen and
+                  Dirk Van den Poel and
+                  Xiaohua Hu and
+                  Yoichi Motomura and
+                  Takuya Takagi and
+                  Lingfei Wu and
+                  Ying Xie and
+                  Akihiro Abe and
+                  Vijay Raghavan},
+  title        = {Deep Federated Anomaly Detection for Multivariate Time Series Data},
+  booktitle    = {{IEEE} International Conference on Big Data, Big Data 2022, Osaka,
+                  Japan, December 17-20, 2022},
+  pages        = {1--10},
+  xpublisher   = {{IEEE}},
+  year         = {2022},
+  url          = {https://doi.org/10.1109/BigData55660.2022.10064694},
+  doi          = {10.1109/BIGDATA55660.2022.10064694},
+  timestamp    = {Thu, 20 Mar 2025 21:08:37 +0100},
+  biburl       = {https://dblp.org/rec/conf/bigdataconf/ZhuSCCZMLCL22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{xu2024pefad,
+  author       = {Ronghui Xu and
+                  Hao Miao and
+                  Senzhang Wang and
+                  Philip S. Yu and
+                  Jianxin Wang},
+  xeditor      = {Ricardo Baeza-Yates and
+                  Francesco Bonchi},
+  title        = {{PeFAD}: {A} Parameter-Efficient Federated Framework for Time Series
+                  Anomaly Detection},
+  booktitle    = {Proceedings of the 30th {ACM} {SIGKDD} Conference on Knowledge Discovery
+                  and Data Mining, {KDD} 2024, Barcelona, Spain, August 25-29, 2024},
+  pages        = {3621--3632},
+  xpublisher   = {{ACM}},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3637528.3671753},
+  doi          = {10.1145/3637528.3671753},
+  timestamp    = {Sun, 02 Nov 2025 21:27:16 +0100},
+  biburl       = {https://dblp.org/rec/conf/kdd/Xu0WY024.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% VQ-VAE and discrete tokenization of time series
+% ======================================================================
+
+@inproceedings{van2017neural,
+  author       = {A{\"{a}}ron van den Oord and
+                  Oriol Vinyals and
+                  Koray Kavukcuoglu},
+  xeditor      = {Isabelle Guyon and
+                  Ulrike von Luxburg and
+                  Samy Bengio and
+                  Hanna M. Wallach and
+                  Rob Fergus and
+                  S. V. N. Vishwanathan and
+                  Roman Garnett},
+  title        = {Neural Discrete Representation Learning},
+  booktitle    = {Advances in Neural Information Processing Systems 30: Annual Conference
+                  on Neural Information Processing Systems 2017, December 4-9, 2017,
+                  Long Beach, CA, {USA}},
+  pages        = {6306--6315},
+  year         = {2017},
+  url          = {https://proceedings.neurips.cc/paper/2017/hash/7a98af17e63a0ac09ce2e96d03992fbc-Abstract.html},
+  timestamp    = {Thu, 21 Jan 2021 15:15:21 +0100},
+  biburl       = {https://dblp.org/rec/conf/nips/OordVK17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lee2023timevqvae,
+  author       = {Daesoo Lee and
+                  Sara Malacarne and
+                  Erlend Aune},
+  xeditor      = {Francisco J. R. Ruiz and
+                  Jennifer G. Dy and
+                  Jan-Willem van de Meent},
+  title        = {Vector Quantized Time Series Generation with a Bidirectional Prior
+                  Model},
+  booktitle    = {International Conference on Artificial Intelligence and Statistics,
+                  25-27 April 2023, Palau de Congressos, Valencia, Spain},
+  xseries      = {Proceedings of Machine Learning Research},
+  xvolume      = {206},
+  pages        = {7665--7693},
+  xpublisher   = {{PMLR}},
+  year         = {2023},
+  url          = {https://proceedings.mlr.press/v206/lee23d.html},
+  timestamp    = {Mon, 19 Jun 2023 16:44:26 +0200},
+  biburl       = {https://dblp.org/rec/conf/aistats/LeeMA23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{lee2024timevqvaead,
+  author       = {Daesoo Lee and
+                  Sara Malacarne and
+                  Erlend Aune},
+  title        = {Explainable time series anomaly detection using masked latent generative
+                  modeling},
+  journal      = {Pattern Recognit.},
+  volume       = {156},
+  pages        = {110826},
+  year         = {2024},
+  url          = {https://doi.org/10.1016/j.patcog.2024.110826},
+  doi          = {10.1016/J.PATCOG.2024.110826},
+  timestamp    = {Mon, 09 Dec 2024 22:47:30 +0100},
+  biburl       = {https://dblp.org/rec/journals/pr/LeeMA24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Federated sharing of representations, centroids and prototypes
+% ======================================================================
+
+@inproceedings{dennis2021kfed,
+  author       = {Don Kurian Dennis and
+                  Tian Li and
+                  Virginia Smith},
+  xeditor      = {Marina Meila and
+                  Tong Zhang},
+  title        = {Heterogeneity for the Win: One-Shot Federated Clustering},
+  booktitle    = {Proceedings of the 38th International Conference on Machine Learning,
+                  {ICML} 2021, 18-24 July 2021, Virtual Event},
+  xseries      = {Proceedings of Machine Learning Research},
+  xvolume      = {139},
+  pages        = {2611--2620},
+  xpublisher   = {{PMLR}},
+  year         = {2021},
+  url          = {http://proceedings.mlr.press/v139/dennis21a.html},
+  timestamp    = {Wed, 25 Aug 2021 17:11:17 +0200},
+  biburl       = {https://dblp.org/rec/conf/icml/Dennis0S21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{tan2022fedproto,
+  author       = {Yue Tan and
+                  Guodong Long and
+                  Lu Liu and
+                  Tianyi Zhou and
+                  Qinghua Lu and
+                  Jing Jiang and
+                  Chengqi Zhang},
+  title        = {{FedProto}: Federated Prototype Learning across Heterogeneous Clients},
+  booktitle    = {Thirty-Sixth {AAAI} Conference on Artificial Intelligence, {AAAI}
+                  2022, Thirty-Fourth Conference on Innovative Applications of Artificial
+                  Intelligence, {IAAI} 2022, The Twelveth Symposium on Educational Advances
+                  in Artificial Intelligence, {EAAI} 2022 Virtual Event, February 22
+                  - March 1, 2022},
+  pages        = {8432--8440},
+  xpublisher   = {{AAAI} Press},
+  year         = {2022},
+  url          = {https://doi.org/10.1609/aaai.v36i8.20819},
+  doi          = {10.1609/AAAI.V36I8.20819},
+  timestamp    = {Wed, 18 Mar 2026 17:07:12 +0100},
+  biburl       = {https://dblp.org/rec/conf/aaai/TanLLZ00Z22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lubana2022orchestra,
+  author       = {Ekdeep Singh Lubana and
+                  Chi Ian Tang and
+                  Fahim Kawsar and
+                  Robert P. Dick and
+                  Akhil Mathur},
+  xeditor      = {Kamalika Chaudhuri and
+                  Stefanie Jegelka and
+                  Le Song and
+                  Csaba Szepesv{\'{a}}ri and
+                  Gang Niu and
+                  Sivan Sabato},
+  title        = {Orchestra: Unsupervised Federated Learning via Globally Consistent
+                  Clustering},
+  booktitle    = {International Conference on Machine Learning, {ICML} 2022, 17-23 July
+                  2022, Baltimore, Maryland, {USA}},
+  xseries      = {Proceedings of Machine Learning Research},
+  xvolume      = {162},
+  pages        = {14461--14484},
+  xpublisher   = {{PMLR}},
+  year         = {2022},
+  url          = {https://proceedings.mlr.press/v162/lubana22a.html},
+  timestamp    = {Tue, 12 Jul 2022 17:36:52 +0200},
+  biburl       = {https://dblp.org/rec/conf/icml/LubanaTKDM22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% Both records are cited: wu2023ucr defines the archive and protocol;
+% paparrizos2022vus identifies the range-aware metrics excluded from the reported
+% cross-series comparisons. Do not remove it as unused.
+
+@article{wu2023ucr,
+  author       = {Renjie Wu and
+                  Eamonn J. Keogh},
+  title        = {Current Time Series Anomaly Detection Benchmarks are Flawed and are
+                  Creating the Illusion of Progress},
+  journal      = {{IEEE} Trans. Knowl. Data Eng.},
+  volume       = {35},
+  number       = {3},
+  pages        = {2421--2429},
+  year         = {2023},
+  url          = {https://doi.org/10.1109/TKDE.2021.3112126},
+  doi          = {10.1109/TKDE.2021.3112126},
+  timestamp    = {Mon, 28 Aug 2023 21:37:43 +0200},
+  biburl       = {https://dblp.org/rec/journals/tkde/WuK23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{paparrizos2022vus,
+  author       = {John Paparrizos et al.},
+  title        = {Volume Under the Surface: {A} New Accuracy Evaluation Measure for
+                  Time-Series Anomaly Detection},
+  journal      = {Proc. {VLDB} Endow.},
+  volume       = {15},
+  number       = {11},
+  pages        = {2774--2787},
+  year         = {2022},
+  url          = {https://www.vldb.org/pvldb/vol15/p2774-paparrizos.pdf},
+  doi          = {10.14778/3551793.3551830},
+  timestamp    = {Mon, 07 Apr 2025 12:33:48 +0200},
+  biburl       = {https://dblp.org/rec/journals/pvldb/PaparrizosBPTEF22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Masked generative modeling — the TimeVQVAE / TimeVQVAE-AD prior
+% ======================================================================
+% Cited in the Background section.
+
+@inproceedings{chang2022maskgit,
+  author       = {Huiwen Chang and
+                  Han Zhang and
+                  Lu Jiang and
+                  Ce Liu and
+                  William T. Freeman},
+  title        = {{MaskGIT}: Masked Generative Image Transformer},
+  booktitle    = {{IEEE/CVF} Conference on Computer Vision and Pattern Recognition,
+                  {CVPR} 2022, New Orleans, LA, USA, June 18-24, 2022},
+  pages        = {11305--11315},
+  xpublisher   = {{IEEE}},
+  year         = {2022},
+  url          = {https://doi.org/10.1109/CVPR52688.2022.01103},
+  doi          = {10.1109/CVPR52688.2022.01103},
+  timestamp    = {Sun, 19 Jan 2025 13:39:04 +0100},
+  biburl       = {https://dblp.org/rec/conf/cvpr/ChangZJLF22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Time-series anomaly detection — surveys and evaluations
+% ======================================================================
+% blazquezgarcia2022review uses year 2022, confirmed on 2026-08-19. The online date
+% is 2021-04-17, but CSUR 54(3) is dated 2022-04-30. DBLP and the IEEE journal
+% convention use the issue year. The same rule applies to wu2023ucr: early access
+% in 2021, issue 35(3) in 2023. A 2020 date conflates the arXiv preprint 2002.04236.
+% Do not replace the issue year with the early-access year.
+
+@article{blazquezgarcia2022review,
+  author       = {Ane Bl{\'{a}}zquez-Garc{\'{\i}}a and
+                  Angel Conde and
+                  Usue Mori and
+                  Jos{\'{e}} Antonio Lozano},
+  title        = {A Review on Outlier/Anomaly Detection in Time Series Data},
+  journal      = {{ACM} Comput. Surv.},
+  volume       = {54},
+  number       = {3},
+  pages        = {56:1--56:33},
+  year         = {2022},
+  url          = {https://doi.org/10.1145/3444690},
+  doi          = {10.1145/3444690},
+  timestamp    = {Sat, 31 May 2025 23:15:02 +0200},
+  biburl       = {https://dblp.org/rec/journals/csur/Blazquez-Garcia21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{schmidl2022anomaly,
+  author       = {Sebastian Schmidl and
+                  Phillip Wenig and
+                  Thorsten Papenbrock},
+  title        = {Anomaly Detection in Time Series: {A} Comprehensive Evaluation},
+  journal      = {Proc. {VLDB} Endow.},
+  volume       = {15},
+  number       = {9},
+  pages        = {1779--1797},
+  year         = {2022},
+  url          = {https://www.vldb.org/pvldb/vol15/p1779-wenig.pdf},
+  doi          = {10.14778/3538598.3538602},
+  timestamp    = {Sat, 28 Oct 2023 13:59:30 +0200},
+  biburl       = {https://dblp.org/rec/journals/pvldb/SchmidlWP22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Federated learning — server optimization and normalization layers
+% ======================================================================
+% FedOpt covers multi-step stage-2 updates. FedBN keeps BN statistics local,
+% whereas the main configuration here pools them.
+
+@inproceedings{reddi2021adaptive,
+  author       = {Sashank J. Reddi and
+                  Zachary Charles and
+                  Manzil Zaheer and
+                  Zachary Garrett and
+                  Keith Rush and
+                  Jakub Kone{\v{c}}n{\'y} and
+                  Sanjiv Kumar and
+                  Hugh Brendan McMahan},
+  title        = {Adaptive Federated Optimization},
+  booktitle    = {9th International Conference on Learning Representations, {ICLR} 2021,
+                  Virtual Event, Austria, May 3-7, 2021},
+  xpublisher   = {OpenReview.net},
+  year         = {2021},
+  url          = {https://openreview.net/forum?id=LkFG3lB13U5},
+  timestamp    = {Wed, 23 Jun 2021 17:36:39 +0200},
+  biburl       = {https://dblp.org/rec/conf/iclr/ReddiCZGRKKM21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{li2021fedbn,
+  author       = {Xiaoxiao Li and
+                  Meirui Jiang and
+                  Xiaofei Zhang and
+                  Michael Kamp and
+                  Qi Dou},
+  title        = {{FedBN}: Federated Learning on Non-{IID} Features via Local Batch Normalization},
+  booktitle    = {9th International Conference on Learning Representations, {ICLR} 2021,
+                  Virtual Event, Austria, May 3-7, 2021},
+  xpublisher   = {OpenReview.net},
+  year         = {2021},
+  url          = {https://openreview.net/forum?id=6YEQUn0QICG},
+  timestamp    = {Tue, 13 Dec 2022 14:39:05 +0100},
+  biburl       = {https://dblp.org/rec/conf/iclr/LiJZKD21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{karimireddy2020scaffold,
+  author       = {Sai Praneeth Karimireddy and
+                  Satyen Kale and
+                  Mehryar Mohri and
+                  Sashank J. Reddi and
+                  Sebastian U. Stich and
+                  Ananda Theertha Suresh},
+  title        = {{SCAFFOLD}: Stochastic Controlled Averaging for Federated Learning},
+  booktitle    = {Proceedings of the 37th International Conference on Machine Learning,
+                  {ICML} 2020, 13-18 July 2020, Virtual Event},
+  xseries      = {Proceedings of Machine Learning Research},
+  xvolume      = {119},
+  pages        = {5132--5143},
+  xpublisher   = {{PMLR}},
+  year         = {2020},
+  url          = {http://proceedings.mlr.press/v119/karimireddy20a.html},
+  timestamp    = {Tue, 15 Dec 2020 17:40:19 +0100},
+  biburl       = {https://dblp.org/rec/conf/icml/KarimireddyKMRS20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{kairouz2021advances,
+  author       = {Peter Kairouz and
+                  H. Brendan McMahan and
+                  Brendan Avent and
+                  Aur{\'{e}}lien Bellet and
+                  Mehdi Bennis and
+                  Arjun Nitin Bhagoji and
+                  Kallista A. Bonawitz and
+                  Zachary Charles and
+                  Graham Cormode and
+                  Rachel Cummings and
+                  Rafael G. L. D'Oliveira and
+                  Hubert Eichner and
+                  Salim El Rouayheb and
+                  David Evans and
+                  Josh Gardner and
+                  Zachary Garrett and
+                  Adri{\`{a}} Gasc{\'{o}}n and
+                  Badih Ghazi and
+                  Phillip B. Gibbons and
+                  Marco Gruteser and
+                  Za{\"{\i}}d Harchaoui and
+                  Chaoyang He and
+                  Lie He and
+                  Zhouyuan Huo and
+                  Ben Hutchinson and
+                  Justin Hsu and
+                  Martin Jaggi and
+                  Tara Javidi and
+                  Gauri Joshi and
+                  Mikhail Khodak and
+                  Jakub Kone{\v{c}}n{\'y} and
+                  Aleksandra Korolova and
+                  Farinaz Koushanfar and
+                  Sanmi Koyejo and
+                  Tancr{\`{e}}de Lepoint and
+                  Yang Liu and
+                  Prateek Mittal and
+                  Mehryar Mohri and
+                  Richard Nock and
+                  Ayfer {\"{O}}zg{\"{u}}r and
+                  Rasmus Pagh and
+                  Hang Qi and
+                  Daniel Ramage and
+                  Ramesh Raskar and
+                  Mariana Raykova and
+                  Dawn Song and
+                  Weikang Song and
+                  Sebastian U. Stich and
+                  Ziteng Sun and
+                  Ananda Theertha Suresh and
+                  Florian Tram{\`{e}}r and
+                  Praneeth Vepakomma and
+                  Jianyu Wang and
+                  Li Xiong and
+                  Zheng Xu and
+                  Qiang Yang and
+                  Felix X. Yu and
+                  Han Yu and
+                  Sen Zhao},
+  title        = {Advances and Open Problems in Federated Learning},
+  journal      = {Found. Trends Mach. Learn.},
+  volume       = {14},
+  number       = {1-2},
+  pages        = {1--210},
+  year         = {2021},
+  url          = {https://doi.org/10.1561/2200000083},
+  doi          = {10.1561/2200000083},
+  timestamp    = {Wed, 20 May 2026 08:32:31 +0200},
+  biburl       = {https://dblp.org/rec/journals/ftml/KairouzMABBBBCC21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Network permutation symmetry — why averaging requires a common coordinate system
+% ======================================================================
+% Background support for the token-index argument. These records were not cited
+% in the submitted manuscript as of 2026-08-19 and therefore do not appear in its bibliography.
+
+@inproceedings{entezari2022permutation,
+  author       = {Rahim Entezari and
+                  Hanie Sedghi and
+                  Olga Saukh and
+                  Behnam Neyshabur},
+  title        = {The Role of Permutation Invariance in Linear Mode Connectivity of
+                  Neural Networks},
+  booktitle    = {The Tenth International Conference on Learning Representations, {ICLR}
+                  2022, Virtual Event, April 25-29, 2022},
+  xpublisher   = {OpenReview.net},
+  year         = {2022},
+  url          = {https://openreview.net/forum?id=dNigytemkL},
+  timestamp    = {Sat, 20 Aug 2022 01:15:42 +0200},
+  biburl       = {https://dblp.org/rec/conf/iclr/EntezariSSN22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{ainsworth2023gitrebasin,
+  author       = {Samuel K. Ainsworth and
+                  Jonathan Hayase and
+                  Siddhartha S. Srinivasa},
+  title        = {Git Re-Basin: Merging Models modulo Permutation Symmetries},
+  booktitle    = {The Eleventh International Conference on Learning Representations,
+                  {ICLR} 2023, Kigali, Rwanda, May 1-5, 2023},
+  xpublisher   = {OpenReview.net},
+  year         = {2023},
+  url          = {https://openreview.net/forum?id=CQsmMYmlP5T},
+  timestamp    = {Wed, 24 Jul 2024 16:50:33 +0200},
+  biburl       = {https://dblp.org/rec/conf/iclr/AinsworthHS23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Score fusion and ensembles
+% ======================================================================
+% The DBLP proceedings record for lin2020feddf has no page numbers. The sometimes
+% quoted range 2351--2363 is not part of that record.
+
+@inproceedings{kriegel2011unifying,
+  author       = {Hans-Peter Kriegel and
+                  Peer Kr{\"{o}}ger and
+                  Erich Schubert and
+                  Arthur Zimek},
+  title        = {Interpreting and Unifying Outlier Scores},
+  booktitle    = {Proceedings of the Eleventh {SIAM} International Conference on Data
+                  Mining, {SDM} 2011, April 28-30, 2011, Mesa, Arizona, {USA}},
+  pages        = {13--24},
+  xpublisher   = {{SIAM} / Omnipress},
+  year         = {2011},
+  url          = {https://doi.org/10.1137/1.9781611972818.2},
+  doi          = {10.1137/1.9781611972818.2},
+  timestamp    = {Sun, 02 Nov 2025 21:27:40 +0100},
+  biburl       = {https://dblp.org/rec/conf/sdm/KriegelKSZ11.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{aggarwal2015outlierensembles,
+  author       = {Charu C. Aggarwal and
+                  Saket Sathe},
+  title        = {Theoretical Foundations and Algorithms for Outlier Ensembles},
+  journal      = {{SIGKDD} Explor.},
+  volume       = {17},
+  number       = {1},
+  pages        = {24--47},
+  year         = {2015},
+  url          = {https://doi.org/10.1145/2830544.2830549},
+  doi          = {10.1145/2830544.2830549},
+  timestamp    = {Wed, 17 Mar 2021 09:50:08 +0100},
+  biburl       = {https://dblp.org/rec/journals/sigkdd/AggarwalS15.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lin2020feddf,
+  author       = {Tao Lin and
+                  Lingjing Kong and
+                  Sebastian U. Stich and
+                  Martin Jaggi},
+  xeditor      = {Hugo Larochelle and
+                  Marc'Aurelio Ranzato and
+                  Raia Hadsell and
+                  Maria-Florina Balcan and
+                  Hsuan-Tien Lin},
+  title        = {Ensemble Distillation for Robust Model Fusion in Federated Learning},
+  booktitle    = {Advances in Neural Information Processing Systems 33: Annual Conference
+                  on Neural Information Processing Systems 2020, NeurIPS 2020, December
+                  6-12, 2020, virtual},
+  year         = {2020},
+  url          = {https://proceedings.neurips.cc/paper/2020/hash/18df51b97ccd68128e994804f3eccc87-Abstract.html},
+  timestamp    = {Mon, 14 Jun 2021 16:24:46 +0200},
+  biburl       = {https://dblp.org/rec/conf/nips/LinKSJ20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ======================================================================
+% Project artifact: code, configuration recipes, cohort files, preregistration
+% and per-cell results. This is the only record not downloaded from DBLP.
+% The submitted manuscript links to the repository directly. Add a release tag
+% or Zenodo DOI to this record when one is available.
+% ======================================================================
+
+@misc{schiavo2026fedtimevqvae,
+  title        = {{FedTimeVQVAE-AD}: code, experiment recipes and per-cell results},
+  howpublished = {\url{https://github.com/lrdsch/FedTimeVQVAE-AD}},
+  year         = {2026}
+}

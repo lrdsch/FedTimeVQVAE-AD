@@ -1,0 +1,20 @@
+{
+  "tag": "c50_local",
+  "smoke": false,
+  "cohort": "c50",
+  "cohort_fingerprint": "5080389790ba83f3",
+  "engine": "deep",
+  "arms": "local",
+  "heads": "ma_c",
+  "modes": "local",
+  "extra_flags": "--window-normalization zscore",
+  "protocol": "converged",
+  "s1_rounds": 300,
+  "s2_rounds": 300,
+  "local_epochs": 10,
+  "fed_patience_rounds": 6,
+  "batch": 64,
+  "seeds": "0",
+  "started": "2026-08-12 21:37:23",
+  "note": "Comparable to any other tag with the same cohort_fingerprint. An ablation is the same cohort with different extra_flags."
+}

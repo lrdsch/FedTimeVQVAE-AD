@@ -1,0 +1,33 @@
+# Dependencies of this repository, pinned to the versions that produced the published runs.
+# Python 3.10. Everything else the code needs is in the standard library, and the TSAD metrics
+# (VUS / PATE / affiliation) are vendored under metrics/ rather than installed.
+#
+#   python3.10 -m venv .venv && . .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# The pinned torch wheel uses CUDA 12.8. For CPU-only or another CUDA build, use a
+# local copy of this file without the extra-index-url and torch pin, install the chosen
+# torch build, then install that copy. Reusing this original file reapplies the CUDA pin.
+#
+# Precision note: training runs in fp16 autocast (FEDVQ_AMP, pinned in scripts/launch.sh). The
+# quantizer's sufficient statistics and all evaluation stay fp32.
+
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.11.0+cu128
+numpy==1.26.4
+scipy==1.15.3
+scikit-learn==1.7.2
+pandas==2.3.3
+matplotlib==3.10.8
+einops==0.8.2
+joblib==1.5.3
+
+# --- optional, and the code runs without them ---------------------------------------------
+# x-transformers   the upstream MaskGIT prior variant (model/prior_upstream.py), imported only
+#                  if you select it; no reported configuration does.
+# setproctitle     readable process names in `ps` during a sweep; a missing package is a no-op.
+# dtaidistance     the DTW column of pipeline/cf_eval.py --with_dtw; NaN if missing.
+x-transformers==1.30.22
+setproctitle==1.3.7
+dtaidistance==2.4.0

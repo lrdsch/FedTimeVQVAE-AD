@@ -1,0 +1,45 @@
+{
+  "name": "ucr2p_10",
+  "max_window": null,
+  "datasets": {
+    "ucr_split_w2p": {
+      "clusters": [
+        "ucr_001",
+        "ucr_011",
+        "ucr_014",
+        "ucr_043",
+        "ucr_082",
+        "ucr_083",
+        "ucr_086",
+        "ucr_170",
+        "ucr_222",
+        "ucr_229"
+      ],
+      "n_clusters": 10,
+      "window_mode": "2p",
+      "window": null,
+      "windows": {
+        "ucr_001": 408,
+        "ucr_011": 182,
+        "ucr_014": 330,
+        "ucr_043": 414,
+        "ucr_082": 892,
+        "ucr_083": 970,
+        "ucr_086": 536,
+        "ucr_170": 674,
+        "ucr_222": 202,
+        "ucr_229": 254
+      },
+      "metrics_tolerance": 64,
+      "federated": true
+    }
+  },
+  "seeds": [
+    0
+  ],
+  "totals": {
+    "datasets": 1,
+    "clusters": 10
+  },
+  "fingerprint": "ad5e0c7a23570299"
+}
